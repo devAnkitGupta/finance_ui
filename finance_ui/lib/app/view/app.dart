@@ -1,5 +1,5 @@
-import 'package:finance_ui/counter/counter.dart';
 import 'package:finance_ui/l10n/l10n.dart';
+import 'package:finance_ui/networth/networth.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -16,7 +16,7 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const Networth(),
     );
   }
 }
