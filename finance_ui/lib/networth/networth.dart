@@ -9,6 +9,7 @@ import 'widgets/cashback_offer_list.dart';
 import 'widgets/credit_card_spend_info.dart';
 import 'widgets/custom_image_view.dart';
 import 'widgets/debt_details_widget.dart';
+import 'widgets/feedback_button.dart';
 import 'widgets/investment_breakdown.dart';
 import 'widgets/latest_list.dart';
 import 'widgets/save_invest_grow.dart';
@@ -32,6 +33,7 @@ class Networth extends StatelessWidget {
             LatestAtMojek(),
             LatestList(),
             SaveInvestGrow(),
+            FeedbackButton(),
           ],
         ),
       ),
