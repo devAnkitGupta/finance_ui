@@ -2,6 +2,7 @@ import 'package:finance_ui/app/app_bar/custom_app_bar.dart';
 import 'package:finance_ui/app/utils/image_constant.dart';
 import 'package:finance_ui/app/utils/size_utils.dart';
 import 'package:finance_ui/networth/widgets/account_balance_card.dart';
+import 'package:finance_ui/networth/widgets/latest_at_mojek.dart';
 import 'package:flutter/material.dart';
 import '../app/theme/app_style.dart';
 import 'widgets/cashback_offer_list.dart';
@@ -9,6 +10,7 @@ import 'widgets/credit_card_spend_info.dart';
 import 'widgets/custom_image_view.dart';
 import 'widgets/debt_details_widget.dart';
 import 'widgets/investment_breakdown.dart';
+import 'widgets/latest_list.dart';
 import 'widgets/total_cash_widget.dart';
 
 class Networth extends StatelessWidget {
@@ -26,6 +28,8 @@ class Networth extends StatelessWidget {
             CreditCardSpentInfo(),
             CashbackOfferList(),
             DebtDetails(),
+            LatestAtMojek(),
+            LatestList(),
           ],
         ),
       ),

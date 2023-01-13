@@ -7,14 +7,17 @@ class LatestAtMojek extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: getPadding(top: 43),
-      child: Text(
-        "latest at mojek money",
-        overflow: TextOverflow.ellipsis,
-        textAlign: TextAlign.left,
-        style: AppStyle.txtGilroySemiBold16Gray900.copyWith(
-          height: getVerticalSize(0.84),
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Padding(
+        padding: getPadding(top: 43, left: 20),
+        child: Text(
+          "latest at mojek money",
+          overflow: TextOverflow.ellipsis,
+          textAlign: TextAlign.left,
+          style: AppStyle.txtGilroySemiBold16Gray900.copyWith(
+            height: getVerticalSize(0.84),
+          ),
         ),
       ),
     );
