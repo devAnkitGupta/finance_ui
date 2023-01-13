@@ -9,13 +9,9 @@ class CardStack extends StatefulWidget {
   const CardStack({
     Key? key,
     required this.cardsDetailsList,
-    required this.scale,
-    required this.size,
   }) : super(key: key);
 
   final List<CreditCardUIDetails> cardsDetailsList;
-  final double scale;
-  final double size;
 
   @override
   _CardStackState createState() => _CardStackState();
@@ -72,6 +68,7 @@ class _CardStackState extends State<CardStack> with TickerProviderStateMixin {
   build(BuildContext context) {
     int numberOfCards = widget.cardsDetailsList.length;
     return Container(
+      alignment: Alignment.topCenter,
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: FittedBox(
         child: AnimatedMotionBuilders(
@@ -96,14 +93,14 @@ class _CardStackState extends State<CardStack> with TickerProviderStateMixin {
                           opacity: isOut ? 0 : 1,
                           child: CreditCard(
                             animationDetails: topCardAnimDetails,
-                            atmCardUIDetails: widget.cardsDetailsList.first,
+                            creditCardUIDetails: widget.cardsDetailsList.first,
                           ),
                         );
                       }
                       double moveEnd =
                           (numberOfCards + 1) - numberOfCards.toDouble();
                       double moveStart = multiplier;
-                      var _3DEffectCardAnimDetails = CreditCardAnimationStatus(
+                      var cardStatus = CreditCardAnimationStatus(
                         move: isOut
                             ? getAnimValue(
                                 animation: _moveController,
@@ -126,8 +123,8 @@ class _CardStackState extends State<CardStack> with TickerProviderStateMixin {
                         return Opacity(
                           opacity: isOut ? 1 : 0,
                           child: CreditCard(
-                            animationDetails: _3DEffectCardAnimDetails,
-                            atmCardUIDetails: widget.cardsDetailsList.first,
+                            animationDetails: cardStatus,
+                            creditCardUIDetails: widget.cardsDetailsList.first,
                           ),
                         );
                       }
@@ -152,7 +149,7 @@ class _CardStackState extends State<CardStack> with TickerProviderStateMixin {
                       }
                       return CreditCard(
                         animationDetails: otherCardAnimDetails,
-                        atmCardUIDetails: leftDetails[index - 1],
+                        creditCardUIDetails: leftDetails[index - 1],
                       );
                     },
                   );
