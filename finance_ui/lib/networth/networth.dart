@@ -7,6 +7,7 @@ import '../app/theme/app_style.dart';
 import 'widgets/cashback_offer_list.dart';
 import 'widgets/credit_card_spend_info.dart';
 import 'widgets/custom_image_view.dart';
+import 'widgets/debt_details_widget.dart';
 import 'widgets/investment_breakdown.dart';
 import 'widgets/total_cash_widget.dart';
 
@@ -24,6 +25,7 @@ class Networth extends StatelessWidget {
             InvestmentBreakDown(),
             CreditCardSpentInfo(),
             CashbackOfferList(),
+            DebtDetails(),
           ],
         ),
       ),

@@ -9,10 +9,10 @@ class AppDecoration {
           BoxShadow(
             color: ColorConstant.black90021,
             spreadRadius: getHorizontalSize(
-              2.00,
+              1.00,
             ),
             blurRadius: getHorizontalSize(
-              2.00,
+              1.00,
             ),
             offset: Offset(
               0,
