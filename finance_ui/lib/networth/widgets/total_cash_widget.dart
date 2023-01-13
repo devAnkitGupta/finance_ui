@@ -14,6 +14,8 @@ class TotalCashWidget extends StatelessWidget {
     return Padding(
       padding: getPadding(left: 20),
       child: SingleChildScrollView(
+                physics: BouncingScrollPhysics(),
+
         scrollDirection: Axis.horizontal,
         child: IntrinsicWidth(
           child: Row(

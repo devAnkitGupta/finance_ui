@@ -12,6 +12,8 @@ class CashbackOfferList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+
       scrollDirection: Axis.horizontal,
       padding: getPadding(top: 45),
       child: IntrinsicWidth(
