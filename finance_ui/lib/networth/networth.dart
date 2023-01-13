@@ -5,6 +5,7 @@ import 'package:finance_ui/networth/widgets/account_balance_card.dart';
 import 'package:flutter/material.dart';
 import '../app/theme/app_style.dart';
 import 'widgets/custom_image_view.dart';
+import 'widgets/total_cash_widget.dart';
 
 class Networth extends StatelessWidget {
   const Networth({Key? key}) : super(key: key);
@@ -29,7 +30,7 @@ class GradientNetworthTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: getSize(560),
+      height: getSize(575),
       child: Stack(
         children: [
           Image.asset(
@@ -58,6 +59,7 @@ class GradientNetworthTile extends StatelessWidget {
                         .copyWith(height: getVerticalSize(1.00))),
               ),
               AccountBalanceCard(),
+              TotalCashWidget()
             ],
           ),
         ],
