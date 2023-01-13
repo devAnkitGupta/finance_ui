@@ -5,6 +5,7 @@ import 'package:finance_ui/networth/widgets/account_balance_card.dart';
 import 'package:flutter/material.dart';
 import '../app/theme/app_style.dart';
 import 'widgets/cashback_offer_list.dart';
+import 'widgets/credit_card_spend_info.dart';
 import 'widgets/custom_image_view.dart';
 import 'widgets/investment_breakdown.dart';
 import 'widgets/total_cash_widget.dart';
@@ -21,6 +22,8 @@ class Networth extends StatelessWidget {
             GradientNetworthTile(),
             CashbackOfferList(),
             InvestmentBreakDown(),
+            CreditCardSpentInfo(),
+            CashbackOfferList(),
           ],
         ),
       ),
