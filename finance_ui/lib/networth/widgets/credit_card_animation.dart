@@ -1,5 +1,5 @@
-import 'package:finance_ui/animations/credit_card_animation/animated_card_deck.dart';
-import 'package:finance_ui/animations/credit_card_animation/credit_card.dart';
+import 'package:finance_ui/networth/animations/credit_card_animation/animated_card_deck.dart';
+import 'package:finance_ui/networth/animations/credit_card_animation/credit_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
