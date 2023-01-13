@@ -11,6 +11,7 @@ import 'widgets/custom_image_view.dart';
 import 'widgets/debt_details_widget.dart';
 import 'widgets/investment_breakdown.dart';
 import 'widgets/latest_list.dart';
+import 'widgets/save_invest_grow.dart';
 import 'widgets/total_cash_widget.dart';
 
 class Networth extends StatelessWidget {
@@ -30,6 +31,7 @@ class Networth extends StatelessWidget {
             DebtDetails(),
             LatestAtMojek(),
             LatestList(),
+            SaveInvestGrow(),
           ],
         ),
       ),
