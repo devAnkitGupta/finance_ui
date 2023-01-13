@@ -3,43 +3,44 @@ import 'package:finance_ui/app/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  CustomButton(
-      {this.shape,
-      this.padding,
-      this.variant,
-      this.fontStyle,
-      this.alignment,
-      this.margin,
-      this.onTap,
-      this.width,
-      this.height,
-      this.text,
-      this.prefixWidget,
-      this.suffixWidget});
+  CustomButton({
+    this.shape,
+    this.padding,
+    this.variant,
+    this.fontStyle,
+    this.alignment,
+    this.margin,
+    this.onTap,
+    this.width,
+    this.height,
+    this.text,
+    this.prefixWidget,
+    this.suffixWidget,
+  });
 
-  ButtonShape? shape;
+ final ButtonShape? shape;
 
-  ButtonPadding? padding;
+ final ButtonPadding? padding;
 
-  ButtonVariant? variant;
+ final ButtonVariant? variant;
 
-  ButtonFontStyle? fontStyle;
+ final ButtonFontStyle? fontStyle;
 
-  Alignment? alignment;
+ final Alignment? alignment;
 
-  EdgeInsetsGeometry? margin;
+ final EdgeInsetsGeometry? margin;
 
-  VoidCallback? onTap;
+ final VoidCallback? onTap;
 
-  double? width;
+ final double? width;
 
-  double? height;
+ final double? height;
 
-  String? text;
+ final String? text;
 
-  Widget? prefixWidget;
+ final Widget? prefixWidget;
 
-  Widget? suffixWidget;
+ final Widget? suffixWidget;
 
   @override
   Widget build(BuildContext context) {

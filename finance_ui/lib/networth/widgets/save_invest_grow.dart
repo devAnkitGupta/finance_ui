@@ -8,9 +8,9 @@ class SaveInvestGrow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: getPadding(top: 43),
+      padding: getPadding(top: 45),
       child: Text(
-        '  save \n invest \n  grow!',
+        ' save \n invest \n  grow!',
         overflow: TextOverflow.ellipsis,
         textAlign: TextAlign.center,
         style: AppStyle.txtGilroyMedium72.copyWith(

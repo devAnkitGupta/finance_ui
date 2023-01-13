@@ -6,7 +6,7 @@ import 'package:finance_ui/bootstrap.dart';
 void main() {
   bootstrap(
     () => DevicePreview(
-      enabled: false,
+      enabled: true,
       builder: (context) => const App(),
     ),
   );
